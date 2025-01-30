@@ -1,5 +1,4 @@
 # Luxury Man's Grooming Website
-==========================
 
 A web application for luxury men's grooming products.
 
