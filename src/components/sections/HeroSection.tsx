@@ -12,10 +12,10 @@ export const HeroSection: React.FC = () => {
         <p className="text-xl md:text-2xl text-accent-cream/90 mb-12 max-w-2xl mx-auto leading-relaxed">
           Elevate your grooming ritual with our premium collection
         </p>
-        <button className="btn-hero group">
+        <a href="/shop" className="btn-hero group">
           Explore Collection
           <ChevronRight className="w-6 h-6 ml-2 transition-transform group-hover:translate-x-1" />
-        </button>
+        </a>
       </div>
     </section>
   );
