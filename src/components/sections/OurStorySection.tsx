@@ -41,7 +41,7 @@ export const OurStorySection: React.FC = () => {
             </div>
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1621607512509-20fb636f8c63?auto=format&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1576666735179-f3ad352212c2?auto=format&fit=crop&q=80"
                 alt="Our Heritage"
                 className="w-full h-full object-cover"
               />
