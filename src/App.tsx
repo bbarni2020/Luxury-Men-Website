@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { BorderFrame } from './components/layout/BorderFrame';
 import { MinimalistBackground } from './components/background/MinimalistBackground';
@@ -12,7 +13,6 @@ import { CheckoutConfirmationPage } from './pages/CheckoutConfirmationPage';
 export const App: React.FC = () => {
   const { isLoading } = useLoading();
   const { isOpen: isCartOpen, closeCart } = useCart();
-  const path = window.location.pathname;
 
   if (isLoading) {
     return <LoadingSpinner />;
@@ -24,9 +24,13 @@ export const App: React.FC = () => {
       <BorderFrame />
       <CartOverlay isOpen={isCartOpen} onClose={closeCart} />
       <div className="relative z-10">
-        {path === '/shop' && <ShopPage />}
-        {path === '/checkout-confirmation' && <CheckoutConfirmationPage />}
-        {path === '/' && <LandingPage />}
+        <Router>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/checkout-confirmation" element={<CheckoutConfirmationPage />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );
