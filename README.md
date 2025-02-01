@@ -49,4 +49,4 @@ This app is built using Vite, React, and TypeScript, and features a modern and r
 
 ## License
 
-This project uses a custom license, which you can find in the [LICENSE.md](LICENSE.md) file. Also, I used AI tools to help with grammar and writing some parts of this project.
+This project uses a custom license, which you can find in the [LICENSE.md](LICENSE.md) file. Also, I used AI tools to help with grammar and writing some parts of this project, and clean up my code.
